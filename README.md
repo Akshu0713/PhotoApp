@@ -1,28 +1,6 @@
-<p align="center">
-  <img width="192" height="192" src="https://raw.githubusercontent.com/MaciejGarncarski/photo-app/main/.github/logo.png">
-</p>
+
 
 # PhotoApp
-
-- [PhotoApp](#photoapp)
-  - [Overview](#overview)
-  - [Live](#live)
-  - [Installation \& running](#installation--running)
-    - [Install node dependencies](#install-node-dependencies)
-    - [Add .env](#add-env)
-    - [Start dev server](#start-dev-server)
-  - [Features](#features)
-  - [Tech used](#tech-used)
-    - [Frontend](#frontend)
-    - [Backend](#backend)
-    - [Testing](#testing)
-    - [Tools](#tools)
-  - [Screenshots](#screenshots)
-    - [Home](#home)
-    - [Chat selection](#chat-selection)
-    - [Chat room](#chat-room)
-    - [Create post](#create-post)
-    - [Profile](#profile)
 
 ## Overview
 
@@ -66,29 +44,15 @@ pnpm dev
 
 ### Backend
 
-[Backend repo](https://github.com/MaciejGarncarski/photo-app-backend)
+Node.js
 
 ### Frontend
 
 - TypeScript
 - SASS with css-modules
-- [Next.js](https://nextjs.org/)
-- [Tanstack Query React](https://tanstack.com/query/latest/docs/react/overview)
-- [Tabler icons](https://tabler-icons.io/)
+- Next.js
+- Tabler icons
 
-### Testing
-
-- Vitest
-- React Testing Library
-- MSW
-
-### Tools
-
-- Eslint
-- Prettier
-- Husky
-- Conventional Commits config
-- Github Actions CI
 
 ## Screenshots
 
