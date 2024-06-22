@@ -2,9 +2,9 @@
   <img width="192" height="192" src="https://raw.githubusercontent.com/MaciejGarncarski/photo-app/main/.github/logo.png">
 </p>
 
-# PhotoApp
+# PhotoApp - backend
 
-- [PhotoApp](#photoapp)
+- [PhotoApp - backend](#photoapp---backend)
   - [Overview](#overview)
   - [Live](#live)
   - [Installation \& running](#installation--running)
@@ -33,7 +33,7 @@ In this app, you can create posts, comment them and chat with other users. It wa
 
 <https://photoapp.maciej-garncarski.pl/>
 
-## Installation and running
+## Installation & running
 
 ### Install node dependencies
 
@@ -46,7 +46,16 @@ pnpm install
 ```
 # .env
 
-NEXT_PUBLIC_API_ROOT=
+DATABASE_URL=
+SECRET=
+IMG_KIT_PRIVATE=
+IMG_KIT_PUBLIC=
+IMG_KIT_ENDPOINT=
+APP_URL=
+BACKEND_URL=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+PRODUCTION=
 ```
 
 ### Start dev server
@@ -55,30 +64,21 @@ NEXT_PUBLIC_API_ROOT=
 pnpm dev
 ```
 
-## Features
-
-- Authentication
-- Chat based on websocket
-- Adding posts, liking and commenting them
-- Edit account
-
 ## Tech used
-
-### Backend
-
-[Backend repo](https://github.com/MaciejGarncarski/photo-app-backend)
 
 ### Frontend
 
-- TypeScript
-- SASS with css-modules
-- [Next.js](https://nextjs.org/)
-- [Tanstack Query React](https://tanstack.com/query/latest/docs/react/overview)
-- [Tabler icons](https://tabler-icons.io/)
+[Frontend repo](https://github.com/MaciejGarncarski/photo-app)
+
+### Backend
+
+- [Fastify](https://www.fastify.io/)
+- [Planetscale database](https://planetscale.com/)
+- Websockets server
 
 ### Testing
 
-- Vitest
+- Jest
 - React Testing Library
 - MSW
 
@@ -96,6 +96,14 @@ pnpm dev
 
 ![home](https://raw.githubusercontent.com/MaciejGarncarski/photo-app/main/.github/screenshots/home.png)
 
+### Chat selection
+
+![chat](https://raw.githubusercontent.com/MaciejGarncarski/photo-app/main/.github/screenshots/chat.png)
+
+### Chat room
+
+![create post](https://raw.githubusercontent.com/MaciejGarncarski/photo-app/main/.github/screenshots/chat-room.png)
+
 ### Create post
 
 ![create post](https://raw.githubusercontent.com/MaciejGarncarski/photo-app/main/.github/screenshots/create-post.png)
@@ -103,7 +111,3 @@ pnpm dev
 ### Profile
 
 ![profile](https://raw.githubusercontent.com/MaciejGarncarski/photo-app/main/.github/screenshots/profile.png)
-
-### Chat
-
-![create post](https://raw.githubusercontent.com/MaciejGarncarski/photo-app/main/.github/screenshots/chat.png)

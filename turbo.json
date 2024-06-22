@@ -1,0 +1,26 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "ui": "stream",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
+    },
+    "backend#build": {
+      "dependsOn": ["^build"]
+    },
+    "frontend#build": {
+      "dependsOn": ["^build", "backend#restart-deploy"]
+    },
+    "backend#restart-deploy": {
+      "dependsOn": ["backend#build"]
+    },
+    "format": {},
+    "start": {},
+    "check-types": {},
+    "dev": {
+      "cache": false
+    }
+  }
+}
